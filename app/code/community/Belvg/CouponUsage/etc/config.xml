@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Belvg
+ * @package     Belvg_CouponUsage
+ * @author      Pavel Novitsky <pavel@belvg.com>
+ * @copyright   2010 - 2013 BelVG LLC. (http://www.belvg.com)
+ */
+-->
+<config>
+    <modules>
+        <Belvg_CouponUsage>
+            <version>1.0.0</version>
+        </Belvg_CouponUsage>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Belvg_CouponUsage before="Mage_Adminhtml">Belvg_CouponUsage_Adminhtml</Belvg_CouponUsage>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <belvg_couponusage>
+                    <file>belvg/couponsusage.xml</file>
+                </belvg_couponusage>
+            </updates>
+        </layout>
+    </adminhtml>
+    <global>
+        <blocks>
+            <belvg_couponusage>
+                <class>Belvg_CouponUsage_Block</class>
+            </belvg_couponusage>
+        </blocks>
+        <helpers>
+            <belvg_couponusage>
+                <class>Belvg_CouponUsage_Helper</class>
+            </belvg_couponusage>
+        </helpers>
+    </global>
+</config>

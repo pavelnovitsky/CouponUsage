@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Belvg
+ * @package     Belvg_CouponUsage
+ * @author      Pavel Novitsky <pavel@belvg.com>
+ * @copyright   2010 - 2013 BelVG LLC. (http://www.belvg.com)
+ */
+-->
+<config>
+    <menu>
+        <promo>
+            <children>
+                <belvg_couponusage translate="title" module="belvg_couponusage">
+                    <title>Coupons Usage</title>
+                    <action>adminhtml/couponsusage/index</action>
+                    <sort_order>700</sort_order>
+                </belvg_couponusage>
+            </children>
+        </promo>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <promo>
+                        <children>
+                            <belvg_couponusage translate="title" module="belvg_couponusage">
+                                <title>Coupons Usage</title>
+                                <sort_order>700</sort_order>
+                            </belvg_couponusage>
+                        </children>
+                    </promo>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Belvg_CouponUsage>
+            <active>true</active>
+            <codePool>community</codePool>
+            <version>1.0.0</version>
+        </Belvg_CouponUsage>
+    </modules>
+</config>
