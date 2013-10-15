@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Belvg
+ * @package     Belvg_CouponUsage
+ * @author      Pavel Novitsky <pavel@belvg.com>
+ * @copyright   2010 - 2013 BelVG LLC. (http://www.belvg.com)
+ */
+-->
+<layout>
+    <adminhtml_couponsusage_index>
+        <reference name="content">
+            <block type="belvg_couponusage/adminhtml_couponsusage" name="couponsusage" />
+        </reference>
+    </adminhtml_couponsusage_index>
+</layout>
