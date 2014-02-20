@@ -53,7 +53,7 @@ class Belvg_CouponUsage_Adminhtml_CouponsusageController extends Mage_Adminhtml_
     public function exportCsvAction()
     {
         $fileName = 'CouponUsage.csv';
-        $content = $this->getLayout()->createBlock('belvg_couponusage/adminhtml_couponsusage_grid')->setNoRenderer(TRUE);
+        $content = $this->getLayout()->createBlock('belvg_couponusage/adminhtml_couponsusage_grid');
         $this->_prepareDownloadResponse($fileName, $content->getCsvFile());
     }
 
@@ -63,7 +63,7 @@ class Belvg_CouponUsage_Adminhtml_CouponsusageController extends Mage_Adminhtml_
     public function exportXmlAction()
     {
         $fileName = 'CouponUsage.xml';
-        $content = $this->getLayout()->createBlock('belvg_couponusage/adminhtml_couponsusage_grid')->setNoRenderer(TRUE);
+        $content = $this->getLayout()->createBlock('belvg_couponusage/adminhtml_couponsusage_grid');
 
         $this->_prepareDownloadResponse($fileName, $content->getExcelFile());
     }
