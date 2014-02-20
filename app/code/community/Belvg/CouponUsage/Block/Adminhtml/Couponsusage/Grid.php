@@ -57,7 +57,7 @@ class Belvg_CouponUsage_Block_Adminhtml_Couponsusage_Grid extends Mage_Adminhtml
                 'header' => Mage::helper('salesrule')->__('Rule Name'),
                 'align' => 'left',
                 'index' => 'name',
-                'renderer' => $this->getNoRenderer()?'':'belvg_couponusage/adminhtml_couponsusage_grid_renderer_rule',
+                'renderer' => $this->_isExport?'':'belvg_couponusage/adminhtml_couponsusage_grid_renderer_rule',
                 'filter_index' => 'salesrule_rule.name'
         ));
 
@@ -65,7 +65,7 @@ class Belvg_CouponUsage_Block_Adminhtml_Couponsusage_Grid extends Mage_Adminhtml
                 'header' => Mage::helper('sales')->__('Order #'),
                 'align' => 'left',
                 'index' => 'increment_id',
-                'renderer' => $this->getNoRenderer()?'':'belvg_couponusage/adminhtml_couponsusage_grid_renderer_incrementid',
+                'renderer' => $this->_isExport?'':'belvg_couponusage/adminhtml_couponsusage_grid_renderer_incrementid',
         ));
 
         $this->addColumn('created_at', array(
